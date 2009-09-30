@@ -1,0 +1,398 @@
+/* 
+  Firstly, let's clean up stray margins, paddings and borders
+  We can't use * because of form elements
+*/
+
+#rs-discuss div,
+#rs-discuss p,
+#rs-discuss h1,
+#rs-discuss h2,
+#rs-discuss h3,
+#rs-discuss h4,
+#rs-discuss span
+{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#rs-discuss .breadcrumbs
+{
+  border: 0 solid #DDDDDD;
+  background-color: #F3F3F3;
+  border-width: 1px 0 1px 0;
+  padding: 2px;
+  margin: 1em 0 1em 0;
+  font-size: 0.9em;
+}
+
+#rs-discuss .userinfo
+{
+  font-size: 0.9em;
+  margin: 1em 0 1em 0;
+  padding: 0 2px 0 2px;
+}
+
+#rs-discuss .searchpanel
+{
+  font-size: 0.9em;
+  margin: 1em 0 1em 0;
+  text-align: right;
+}
+
+#rs-discuss .searchpanel input
+{
+  font-size: 0.8em;
+  padding: 2px;
+}
+
+#rs-discuss .linkback
+{
+  font-size: 0.9em;
+  text-align: center;
+}
+
+#rs-discuss .create-new
+{
+  font-weight: bold;
+  font-size: 0.9em;
+  float: right;
+  padding-right: 20px;
+  margin: 0;
+  background-image: url('images/icon-add.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+#rs-discuss .feed-link
+{
+  padding-left: 20px;
+  margin: 0;
+  background-image: url('images/icon-feed.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+#rs-discuss .cannot-create
+{
+  font-size: 0.9em;
+  float: right;
+  padding-right: 20px;
+  margin: 0;
+  background-image: url('images/icon-delete.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+#rs-discuss .page-list
+{
+  border-style: solid;
+  border-color: #4180B5;
+  border-width: 2px 0 2px 0;
+  background-color: #FFFFFF;
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+#rs-discuss .table-list
+{
+  clear: both;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#rs-discuss td,
+#rs-discuss th
+{
+  padding: 3px 5px 3px 5px;
+}
+
+#rs-discuss th
+{
+  background-color: #4180B5;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+}
+
+#rs-discuss .rowgroup
+{
+  background-color: #F3F3F3;
+}
+
+#rs-discuss .rowgroup-odd
+{
+  background-color: #FFFFFF;
+}
+
+#rs-discuss .rowgroup,
+#rs-discuss .rowgroup-odd
+{
+  border-style: solid;
+  border-color: #DDDDDD;
+  border-width: 0 0 1px 0;
+}
+
+#rs-discuss .cell-name
+{
+  width: 100%;
+}
+
+#rs-discuss .cell-name a
+{
+  display: block;
+  font-weight: bold;
+  padding-left: 20px;
+  background-image: url('images/icon-new-messages.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+#rs-discuss .cell-name a:visited
+{
+  font-weight: normal;
+  background-image: url('images/icon-no-new-messages.png');
+}
+
+#rs-discuss .cell-name .pinned a
+{
+  background-image: url('images/icon-flag.png');
+}
+
+#rs-discuss .cell-name .locked a
+{
+  background-image: url('images/icon-lock.png');
+}
+
+
+#rs-discuss .cell-count,
+#rs-discuss .cell-recent
+{
+  white-space: nowrap;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#rs-discuss .cell-description,
+#rs-discuss .cell-recent,
+#rs-discuss .cell-activity
+{
+  font-size: 0.8em;
+}
+
+#rs-discuss .cell-activity
+{
+  white-space: nowrap;
+  text-align: right;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+#rs-discuss .cell-nothing
+{
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9em;
+}
+
+#rs-discuss .cell-search-nothing
+{
+  text-align: left;
+  padding: 30px 50px 30px 50px;
+  font-size: 0.9em;
+}
+
+#rs-discuss .post-block
+{
+  background-color: #F3F3F3;
+  padding: 5px 5px 5px 5px;
+  border-color: #DDDDDD;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  font-size: 0.9em;
+}
+
+#rs-discuss .post-block-odd
+{
+  background-color: #FFFFFF;
+  padding: 5px 5px 5px 5px;
+  border-color: #DDDDDD;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  font-size: 0.9em;
+}
+
+
+#rs-discuss .post-wrapper p
+{
+  margin: 10px 5px 10px 5px;
+}
+
+
+#rs-discuss .post-wrapper p.post-meta
+{
+  margin: 15px 0 0 0;
+  padding: 2px 5px 0 5px;
+  font-size: 0.8em;
+}
+
+#rs-discuss h3.title,
+#rs-discuss h3.error-title
+{
+  font-size: 1.75em;
+  background-color: #4180B5;
+  color: white;
+  padding: 10px 10px 0 10px;
+}
+
+#rs-discuss h3.error-title
+{
+  background-color: #B24040;
+}
+
+#rs-discuss h4.subtitle,
+#rs-discuss p.error-message
+{
+  font-size: 0.8em;
+  background-color: #4180B5;
+  color: white;
+  font-weight: normal;
+  padding: 0 10px 10px 10px;
+}
+
+#rs-discuss p.error-message
+{
+  background-color: #B24040;
+  font-size: 0.9em;
+}
+
+#rs-discuss h4.subtitle a
+{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+#rs-discuss h4.subtitle a:hover
+{
+  color: #4180B5;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+#rs-discuss fieldset
+{
+  background-color: #F3F3F3;
+  border: 0px solid #4180B5;
+  border-width: 0 0 2px 0;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+}
+
+#rs-discuss fieldset p.form-notes
+{
+  text-align: left;
+  font-size: 0.9em;
+	margin: 5px 5% 1px 5%;
+}
+
+#rs-discuss #xhtml-sample
+{
+  display: block;
+  font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+  padding: 5px;
+  color: #888888;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #DDDDDD;
+  border-width: 1px 0 1px 0;
+	margin: 5px 0 15px 0;
+  font-family: 'Lucida Grande', 
+}
+
+#rs-discuss fieldset code.xhtml-sample span.tag
+{
+  white-space: nowrap;
+}
+
+#rs-discuss fieldset label
+{
+  font-weight: bold;
+  display: block;
+  margin: 5px 5% 5px 5%;
+  text-align: left;
+}
+
+#rs-discuss fieldset textarea,
+#rs-discuss fieldset input.text
+{
+  width: 90%;
+  font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+  padding: 2px;
+}
+
+#rs-discuss fieldset textarea
+{
+  height: 10em;
+}
+
+#rs-discuss p.submit
+{
+  text-align: right;
+}
+
+#rs-discuss input.submit
+{
+  width: 170px;
+	padding: 2px;
+	margin: 5px 5% 1px 0;
+  font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+  text-align: center;
+}
+
+#rs-discuss .profile-info
+{
+  margin: 15px;
+  font-size: 0.9em;
+}
+
+#rs-discuss .profile-contents
+{
+  margin: 15px;
+  padding: 5px;
+  font-size: 0.9em;
+  background-color: #F3F3F3;
+  border-color: #DDDDDD;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+}
+
+#rs-discuss div.recent-activity h3.title
+{
+  padding: 10px 10px 0 5px;
+  font-size: 1.5em;
+  color: #4180B5;
+  background-color: #FFFFFF;
+}
+
+#rs-discuss div.recent-activity p.subscription-info
+{
+  font-size: 0.9em;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+#rs-discuss div.recent-activity table
+{
+  border-color: #DDDDDD;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+}
+
+
+#rs-discuss div.recent-activity .cell-name a
+{
+  padding: 0;
+  background-image: none;
+  font-weight: normal;
+}
